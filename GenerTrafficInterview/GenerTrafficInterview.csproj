@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06BA233B-707B-4ADA-B3B4-6E7A20323F09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GenerTrafficInterview</RootNamespace>
+    <AssemblyName>GenerTrafficInterview</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=f72c54173613ae1f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Pub\DevExpress.Data.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v10.2.Adomd">
+      <HintPath>..\Pub\DevExpress.PivotGrid.v10.2.Adomd.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v10.2">
+      <HintPath>..\..\..\..\JGHYB6.0\ProSrc\DLL\DevExpress.Tutorials.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=f72c54173613ae1f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Pub\DevExpress.Utils.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="devexpress.web.aspxscheduler.v10.2">
+      <HintPath>..\Pub\devexpress.web.aspxscheduler.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=f72c54173613ae1f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Pub\DevExpress.XtraBars.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.2.Design">
+      <HintPath>..\Pub\DevExpress.XtraBars.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=f72c54173613ae1f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Pub\DevExpress.XtraEditors.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2.Design">
+      <HintPath>..\Pub\DevExpress.XtraEditors.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=f72c54173613ae1f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Pub\DevExpress.XtraLayout.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v10.2.Design">
+      <HintPath>..\Pub\DevExpress.XtraLayout.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.8.0, Culture=neutral, PublicKeyToken=f72c54173613ae1f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Pub\DevExpress.XtraNavBar.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v10.2.Design">
+      <HintPath>..\Pub\DevExpress.XtraNavBar.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v10.2">
+      <HintPath>..\..\..\..\JGHYB6.0\ProSrc\DLL\DevExpress.XtraRichEdit.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Word">
+      <HintPath>..\Pub\Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExtWebBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SELECTED.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNSELECTED.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxDSOFramer">
+      <Guid>{00460180-9E5E-11D5-B7C8-B8269041DD57}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DSOFramer">
+      <Guid>{00460180-9E5E-11D5-B7C8-B8269041DD57}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weixuan.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xuanzhong.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weixuan1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32l.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32m.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\player\vlc.net.csproj">
+      <Project>{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}</Project>
+      <Name>vlc.net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qiche.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qiche1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beijing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anniu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anniu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beijing2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anniu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anniu_看图王.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anxia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yiji21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yiji11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZhuYeMian.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

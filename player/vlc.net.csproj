@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vlc.net</RootNamespace>
+    <AssemblyName>vlc.net</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Utils.v10.2">
+      <HintPath>..\..\Work Programs\JGHYB6.0\ProSrc\DLL\DevExpress.Utils.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2">
+      <HintPath>..\..\Work Programs\JGHYB6.0\ProSrc\DLL\DevExpress.XtraEditors.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.2.Design">
+      <HintPath>..\..\Work Programs\JGHYB6.0\ProSrc\DLL\DevExpress.XtraEditors.v10.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FirstForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstForm.Designer.cs">
+      <DependentUpon>FirstForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoPlayerForm.Designer.cs">
+      <DependentUpon>VideoPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VlcPlayer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FirstForm.resx">
+      <DependentUpon>FirstForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoPlayerForm.resx">
+      <DependentUpon>VideoPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrackBarEx\TrackBarEx.csproj">
+      <Project>{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}</Project>
+      <Name>TrackBarEx</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\white.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\播放.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\上一个.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\下一个.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\暂停.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\声音.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\静音.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\大暂停.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\停止.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\暂停.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\播放.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vlc.net", "vlc.net.csproj", "{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackBarEx", "..\TrackBarEx\TrackBarEx.csproj", "{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerTest", "PlayerTest\PlayerTest.csproj", "{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}.Debug|x86.ActiveCfg = Debug|x86
+		{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}.Debug|x86.Build.0 = Debug|x86
+		{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}.Release|Any CPU.ActiveCfg = Release|x86
+		{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}.Release|Mixed Platforms.Build.0 = Release|x86
+		{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}.Release|x86.ActiveCfg = Release|x86
+		{8CD8039C-AA33-4C8D-8F77-4E0297BAE990}.Release|x86.Build.0 = Release|x86
+		{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1F9087B9-8CB1-46A8-BDE1-9B8BA07D6A8B}.Release|x86.ActiveCfg = Release|Any CPU
+		{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}.Debug|x86.ActiveCfg = Debug|x86
+		{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}.Debug|x86.Build.0 = Debug|x86
+		{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}.Release|Any CPU.ActiveCfg = Release|x86
+		{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}.Release|Mixed Platforms.Build.0 = Release|x86
+		{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}.Release|x86.ActiveCfg = Release|x86
+		{F9217FE1-DFEE-41ED-AF21-CDB8E371AD26}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
