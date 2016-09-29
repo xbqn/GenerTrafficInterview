@@ -251,7 +251,7 @@
             // 
             // Label_gs
             // 
-            this.Label_gs.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_gs.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_gs.Appearance.Image = global::GenerTrafficInterview.Resource1.yiji1;
             this.Label_gs.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_gs.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
@@ -266,7 +266,7 @@
             // 
             // Label_zbgz
             // 
-            this.Label_zbgz.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_zbgz.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_zbgz.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_zbgz.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Label_zbgz.Location = new System.Drawing.Point(115, 0);
@@ -279,7 +279,7 @@
             // 
             // Label_bybg
             // 
-            this.Label_bybg.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Bold);
+            this.Label_bybg.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.Label_bybg.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_bybg.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Label_bybg.Location = new System.Drawing.Point(228, 0);
@@ -292,7 +292,7 @@
             // 
             // Label_jccl
             // 
-            this.Label_jccl.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Bold);
+            this.Label_jccl.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.Label_jccl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_jccl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Label_jccl.Location = new System.Drawing.Point(342, 0);
@@ -305,7 +305,7 @@
             // 
             // Label_czsy
             // 
-            this.Label_czsy.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Bold);
+            this.Label_czsy.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.Label_czsy.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_czsy.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Label_czsy.Location = new System.Drawing.Point(458, 0);
@@ -318,7 +318,7 @@
             // 
             // Label_dzjc
             // 
-            this.Label_dzjc.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Bold);
+            this.Label_dzjc.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.Label_dzjc.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_dzjc.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Label_dzjc.Location = new System.Drawing.Point(578, 0);
@@ -354,7 +354,7 @@
             // 
             // labelControlhlp
             // 
-            this.labelControlhlp.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControlhlp.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControlhlp.Appearance.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelControlhlp.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControlhlp.Dock = System.Windows.Forms.DockStyle.Right;
@@ -366,7 +366,7 @@
             // 
             // labelControlesc
             // 
-            this.labelControlesc.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControlesc.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControlesc.Appearance.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelControlesc.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControlesc.Dock = System.Windows.Forms.DockStyle.Right;
@@ -407,15 +407,13 @@
             // navBarControl1
             // 
             this.navBarControl1.ActiveGroup = this.navBarGroupgs;
-            this.navBarControl1.Appearance.Background.BackColor = System.Drawing.Color.White;
-            this.navBarControl1.Appearance.Background.Image = global::GenerTrafficInterview.Resource1.beijing2;
+            this.navBarControl1.Appearance.Background.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(179)))), ((int)(((byte)(205)))));
             this.navBarControl1.Appearance.Background.Options.UseBackColor = true;
-            this.navBarControl1.Appearance.Background.Options.UseImage = true;
             this.navBarControl1.Appearance.Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.navBarControl1.Appearance.Button.Options.UseBackColor = true;
             this.navBarControl1.Appearance.Item.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.navBarControl1.Appearance.Item.Options.UseBackColor = true;
-            this.navBarControl1.BackColor = System.Drawing.Color.Black;
+            this.navBarControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(179)))), ((int)(((byte)(205)))));
             this.navBarControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer1);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer2);
@@ -497,13 +495,13 @@
             this.navBarItemgs1,
             this.navBarItemgs2,
             this.navBarItemgs3});
-            this.navBarControl1.Location = new System.Drawing.Point(-10, -3);
+            this.navBarControl1.Location = new System.Drawing.Point(-8, -3);
             this.navBarControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.navBarControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.navBarControl1.Margin = new System.Windows.Forms.Padding(0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 157;
-            this.navBarControl1.Size = new System.Drawing.Size(203, 718);
+            this.navBarControl1.Size = new System.Drawing.Size(201, 718);
             this.navBarControl1.SkinExplorerBarViewScrollStyle = DevExpress.XtraNavBar.SkinExplorerBarViewScrollStyle.Buttons;
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";
@@ -515,15 +513,13 @@
             // 
             this.navBarGroupgs.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
             this.navBarGroupgs.Appearance.BorderColor = System.Drawing.Color.Blue;
-            this.navBarGroupgs.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroupgs.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.navBarGroupgs.Appearance.Options.UseBackColor = true;
-            this.navBarGroupgs.Appearance.Options.UseBorderColor = true;
             this.navBarGroupgs.Appearance.Options.UseFont = true;
             this.navBarGroupgs.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.navBarGroupgs.AppearanceBackground.Options.UseBackColor = true;
             this.navBarGroupgs.Caption = "       概述";
             this.navBarGroupgs.ControlContainer = this.navBarGroupControlContainer1;
-            this.navBarGroupgs.Expanded = true;
             this.navBarGroupgs.GroupClientHeight = 91;
             this.navBarGroupgs.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
             this.navBarGroupgs.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
@@ -543,7 +539,7 @@
             // 
             // labelControl6
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl6.Dock = System.Windows.Forms.DockStyle.Top;
@@ -555,7 +551,7 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -567,7 +563,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -614,7 +610,7 @@
             // 
             // labelControl10
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl10.Dock = System.Windows.Forms.DockStyle.Top;
@@ -626,7 +622,7 @@
             // 
             // labelControl9
             // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl9.Dock = System.Windows.Forms.DockStyle.Top;
@@ -638,7 +634,7 @@
             // 
             // labelControl8
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl8.Dock = System.Windows.Forms.DockStyle.Top;
@@ -650,7 +646,7 @@
             // 
             // labelControl7
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl7.Dock = System.Windows.Forms.DockStyle.Top;
@@ -672,7 +668,7 @@
             // 
             // labelControl14
             // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl14.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl14.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl14.Dock = System.Windows.Forms.DockStyle.Top;
@@ -684,7 +680,7 @@
             // 
             // labelControl13
             // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl13.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl13.Dock = System.Windows.Forms.DockStyle.Top;
@@ -696,7 +692,7 @@
             // 
             // labelControl12
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl12.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl12.Dock = System.Windows.Forms.DockStyle.Top;
@@ -708,7 +704,7 @@
             // 
             // labelControl11
             // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl11.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl11.Dock = System.Windows.Forms.DockStyle.Top;
@@ -730,7 +726,7 @@
             // 
             // labelControl18
             // 
-            this.labelControl18.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl18.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl18.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl18.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl18.Dock = System.Windows.Forms.DockStyle.Top;
@@ -742,7 +738,7 @@
             // 
             // labelControl17
             // 
-            this.labelControl17.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl17.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl17.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl17.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl17.Dock = System.Windows.Forms.DockStyle.Top;
@@ -754,7 +750,7 @@
             // 
             // labelControl16
             // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl16.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl16.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl16.Dock = System.Windows.Forms.DockStyle.Top;
@@ -766,7 +762,7 @@
             // 
             // labelControl15
             // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl15.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl15.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl15.Dock = System.Windows.Forms.DockStyle.Top;
@@ -788,7 +784,7 @@
             // 
             // labelControl22
             // 
-            this.labelControl22.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl22.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl22.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl22.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl22.Dock = System.Windows.Forms.DockStyle.Top;
@@ -800,7 +796,7 @@
             // 
             // labelControl21
             // 
-            this.labelControl21.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl21.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl21.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl21.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl21.Dock = System.Windows.Forms.DockStyle.Top;
@@ -812,7 +808,7 @@
             // 
             // labelControl20
             // 
-            this.labelControl20.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl20.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl20.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl20.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl20.Dock = System.Windows.Forms.DockStyle.Top;
@@ -824,7 +820,7 @@
             // 
             // labelControl19
             // 
-            this.labelControl19.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl19.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl19.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl19.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl19.Dock = System.Windows.Forms.DockStyle.Top;
@@ -847,7 +843,7 @@
             // 
             // labelControl27
             // 
-            this.labelControl27.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl27.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl27.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl27.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl27.Dock = System.Windows.Forms.DockStyle.Top;
@@ -859,7 +855,7 @@
             // 
             // labelControl26
             // 
-            this.labelControl26.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl26.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl26.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl26.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl26.Dock = System.Windows.Forms.DockStyle.Top;
@@ -871,7 +867,7 @@
             // 
             // labelControl25
             // 
-            this.labelControl25.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl25.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl25.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl25.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl25.Dock = System.Windows.Forms.DockStyle.Top;
@@ -883,7 +879,7 @@
             // 
             // labelControl24
             // 
-            this.labelControl24.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl24.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl24.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl24.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl24.Dock = System.Windows.Forms.DockStyle.Top;
@@ -895,7 +891,7 @@
             // 
             // labelControl23
             // 
-            this.labelControl23.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl23.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl23.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl23.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl23.Dock = System.Windows.Forms.DockStyle.Top;
@@ -915,7 +911,7 @@
             // 
             // labelControl29
             // 
-            this.labelControl29.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl29.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl29.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl29.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl29.Dock = System.Windows.Forms.DockStyle.Top;
@@ -927,7 +923,7 @@
             // 
             // labelControl28
             // 
-            this.labelControl28.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl28.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl28.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl28.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl28.Dock = System.Windows.Forms.DockStyle.Top;
@@ -948,7 +944,7 @@
             // 
             // labelControl32
             // 
-            this.labelControl32.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl32.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl32.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl32.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl32.Dock = System.Windows.Forms.DockStyle.Top;
@@ -960,7 +956,7 @@
             // 
             // labelControl31
             // 
-            this.labelControl31.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl31.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl31.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl31.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl31.Dock = System.Windows.Forms.DockStyle.Top;
@@ -972,7 +968,7 @@
             // 
             // labelControl30
             // 
-            this.labelControl30.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl30.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl30.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl30.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl30.Dock = System.Windows.Forms.DockStyle.Top;
@@ -998,7 +994,7 @@
             // 
             // labelControl40
             // 
-            this.labelControl40.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl40.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl40.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl40.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl40.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1010,7 +1006,7 @@
             // 
             // labelControl39
             // 
-            this.labelControl39.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl39.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl39.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl39.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl39.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1022,7 +1018,7 @@
             // 
             // labelControl38
             // 
-            this.labelControl38.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl38.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl38.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl38.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl38.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1034,7 +1030,7 @@
             // 
             // labelControl37
             // 
-            this.labelControl37.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl37.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl37.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl37.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl37.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1046,7 +1042,7 @@
             // 
             // labelControl36
             // 
-            this.labelControl36.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl36.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl36.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl36.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl36.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1058,7 +1054,7 @@
             // 
             // labelControl35
             // 
-            this.labelControl35.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl35.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl35.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl35.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl35.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1070,7 +1066,7 @@
             // 
             // labelControl34
             // 
-            this.labelControl34.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl34.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl34.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl34.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl34.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1082,7 +1078,7 @@
             // 
             // labelControl33
             // 
-            this.labelControl33.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl33.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl33.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl33.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl33.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1105,7 +1101,7 @@
             // 
             // labelControl45
             // 
-            this.labelControl45.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl45.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl45.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl45.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl45.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1117,7 +1113,7 @@
             // 
             // labelControl44
             // 
-            this.labelControl44.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl44.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl44.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl44.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl44.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1129,7 +1125,7 @@
             // 
             // labelControl43
             // 
-            this.labelControl43.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl43.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl43.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl43.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl43.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1141,7 +1137,7 @@
             // 
             // labelControl42
             // 
-            this.labelControl42.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl42.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl42.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl42.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl42.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1153,7 +1149,7 @@
             // 
             // labelControl41
             // 
-            this.labelControl41.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl41.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl41.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl41.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl41.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1176,7 +1172,7 @@
             // 
             // labelControl50
             // 
-            this.labelControl50.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl50.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl50.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl50.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl50.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1188,7 +1184,7 @@
             // 
             // labelControl49
             // 
-            this.labelControl49.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl49.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl49.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl49.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl49.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1200,7 +1196,7 @@
             // 
             // labelControl48
             // 
-            this.labelControl48.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl48.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl48.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl48.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl48.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1212,7 +1208,7 @@
             // 
             // labelControl47
             // 
-            this.labelControl47.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl47.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl47.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl47.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl47.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1224,7 +1220,7 @@
             // 
             // labelControl46
             // 
-            this.labelControl46.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl46.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl46.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl46.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl46.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1244,7 +1240,7 @@
             // 
             // labelControl52
             // 
-            this.labelControl52.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl52.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl52.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl52.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl52.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1256,7 +1252,7 @@
             // 
             // labelControl51
             // 
-            this.labelControl51.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl51.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl51.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl51.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl51.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1277,7 +1273,7 @@
             // 
             // labelControl55
             // 
-            this.labelControl55.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl55.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl55.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl55.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl55.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1289,7 +1285,7 @@
             // 
             // labelControl54
             // 
-            this.labelControl54.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl54.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl54.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl54.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl54.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1301,7 +1297,7 @@
             // 
             // labelControl53
             // 
-            this.labelControl53.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl53.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl53.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu1;
             this.labelControl53.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl53.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1314,14 +1310,13 @@
             // navBarGroup2
             // 
             this.navBarGroup2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup2.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup2.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup2.Appearance.Options.UseBackColor = true;
             this.navBarGroup2.Appearance.Options.UseFont = true;
             this.navBarGroup2.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.navBarGroup2.AppearanceBackground.Options.UseBackColor = true;
             this.navBarGroup2.Caption = "navBarGroup2";
             this.navBarGroup2.ControlContainer = this.navBarGroupControlContainer2;
-            this.navBarGroup2.Expanded = true;
             this.navBarGroup2.GroupClientHeight = 121;
             this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
             this.navBarGroup2.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
@@ -1333,7 +1328,7 @@
             // 
             // navBarItem1
             // 
-            this.navBarItem1.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBarItem1.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.navBarItem1.Appearance.Options.UseFont = true;
             this.navBarItem1.AppearancePressed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.navBarItem1.AppearancePressed.Options.UseForeColor = true;
@@ -1364,7 +1359,7 @@
             // navBarGroup3
             // 
             this.navBarGroup3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup3.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup3.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup3.Appearance.Options.UseBackColor = true;
             this.navBarGroup3.Appearance.Options.UseFont = true;
             this.navBarGroup3.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1411,7 +1406,7 @@
             // navBarGroup4
             // 
             this.navBarGroup4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup4.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup4.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup4.Appearance.Options.UseBackColor = true;
             this.navBarGroup4.Appearance.Options.UseFont = true;
             this.navBarGroup4.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1458,7 +1453,7 @@
             // navBarGroup5
             // 
             this.navBarGroup5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup5.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup5.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup5.Appearance.Options.UseBackColor = true;
             this.navBarGroup5.Appearance.Options.UseFont = true;
             this.navBarGroup5.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1505,7 +1500,7 @@
             // navBarGroup6
             // 
             this.navBarGroup6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup6.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup6.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup6.Appearance.Options.UseBackColor = true;
             this.navBarGroup6.Appearance.Options.UseFont = true;
             this.navBarGroup6.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1560,7 +1555,7 @@
             // navBarGroup7
             // 
             this.navBarGroup7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup7.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup7.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup7.Appearance.Options.UseBackColor = true;
             this.navBarGroup7.Appearance.Options.UseFont = true;
             this.navBarGroup7.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1591,7 +1586,7 @@
             // navBarGroup8
             // 
             this.navBarGroup8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup8.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup8.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup8.Appearance.Options.UseBackColor = true;
             this.navBarGroup8.Appearance.Options.UseFont = true;
             this.navBarGroup8.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1630,7 +1625,7 @@
             // navBarGroup9
             // 
             this.navBarGroup9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup9.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup9.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup9.Appearance.Options.UseBackColor = true;
             this.navBarGroup9.Appearance.Options.UseFont = true;
             this.navBarGroup9.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1709,7 +1704,7 @@
             // navBarGroup10
             // 
             this.navBarGroup10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup10.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup10.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup10.Appearance.Options.UseBackColor = true;
             this.navBarGroup10.Appearance.Options.UseFont = true;
             this.navBarGroup10.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1764,7 +1759,7 @@
             // navBarGroup11
             // 
             this.navBarGroup11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup11.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup11.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup11.Appearance.Options.UseBackColor = true;
             this.navBarGroup11.Appearance.Options.UseFont = true;
             this.navBarGroup11.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1819,7 +1814,7 @@
             // navBarGroup12
             // 
             this.navBarGroup12.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup12.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup12.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup12.Appearance.Options.UseBackColor = true;
             this.navBarGroup12.Appearance.Options.UseFont = true;
             this.navBarGroup12.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1850,7 +1845,7 @@
             // navBarGroup13
             // 
             this.navBarGroup13.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroup13.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.navBarGroup13.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup13.Appearance.Options.UseBackColor = true;
             this.navBarGroup13.Appearance.Options.UseFont = true;
             this.navBarGroup13.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
@@ -1940,7 +1935,7 @@
             // 
             // Header1
             // 
-            this.Header1.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Header1.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Header1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Header1.Location = new System.Drawing.Point(3, 3);
             this.Header1.Name = "Header1";
@@ -1951,7 +1946,7 @@
             // 
             // Header2
             // 
-            this.Header2.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.Header2.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.Header2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Header2.Location = new System.Drawing.Point(109, 3);
             this.Header2.Name = "Header2";
@@ -1962,7 +1957,7 @@
             // 
             // Header3
             // 
-            this.Header3.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.Header3.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.Header3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Header3.Location = new System.Drawing.Point(215, 3);
             this.Header3.Name = "Header3";
@@ -1972,7 +1967,7 @@
             // 
             // Header4
             // 
-            this.Header4.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.Header4.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.Header4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Header4.Location = new System.Drawing.Point(321, 3);
             this.Header4.Name = "Header4";
@@ -1982,7 +1977,7 @@
             // 
             // Header5
             // 
-            this.Header5.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.Header5.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.Header5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Header5.Location = new System.Drawing.Point(427, 3);
             this.Header5.Name = "Header5";
@@ -1992,7 +1987,7 @@
             // 
             // Header6
             // 
-            this.Header6.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.Header6.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.Header6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Header6.Location = new System.Drawing.Point(533, 3);
             this.Header6.Name = "Header6";
@@ -2002,7 +1997,7 @@
             // 
             // Header7
             // 
-            this.Header7.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.Header7.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.Header7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Header7.Location = new System.Drawing.Point(639, 3);
             this.Header7.Name = "Header7";
@@ -2012,7 +2007,7 @@
             // 
             // Header8
             // 
-            this.Header8.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.Header8.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.Header8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.Header8.Location = new System.Drawing.Point(745, 3);
             this.Header8.Name = "Header8";
@@ -2050,6 +2045,7 @@
             // 
             // panelgsdaohang
             // 
+            this.panelgsdaohang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
             this.panelgsdaohang.Controls.Add(this.labelControl3);
             this.panelgsdaohang.Controls.Add(this.labelControl2);
             this.panelgsdaohang.Controls.Add(this.labelControl1);
@@ -2061,7 +2057,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu2;
             this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl3.Location = new System.Drawing.Point(0, 59);
@@ -2073,7 +2069,8 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu2;
             this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl2.Location = new System.Drawing.Point(0, 28);
@@ -2085,7 +2082,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Image = global::GenerTrafficInterview.Resource1.anniu2;
             this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl1.Location = new System.Drawing.Point(0, -2);
@@ -2096,6 +2093,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
             this.panel3.Controls.Add(this.navBarControl1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 93);

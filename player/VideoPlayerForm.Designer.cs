@@ -29,12 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            CSharpWin.TrackBarColorTable trackBarColorTable1 = new CSharpWin.TrackBarColorTable();
-            CSharpWin.TrackBarColorTable trackBarColorTable2 = new CSharpWin.TrackBarColorTable();
+            CSharpWin.TrackBarColorTable trackBarColorTable5 = new CSharpWin.TrackBarColorTable();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VideoPlayerForm));
+            CSharpWin.TrackBarColorTable trackBarColorTable6 = new CSharpWin.TrackBarColorTable();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblStop = new System.Windows.Forms.Label();
             this.trackBarVolume = new CSharpWin.TrackBarEx();
+            this.lblRadio = new System.Windows.Forms.Label();
+            this.lblNext = new System.Windows.Forms.Label();
+            this.lblPause = new System.Windows.Forms.Label();
+            this.lblPrev = new System.Windows.Forms.Label();
             this.trackBar1 = new CSharpWin.TrackBarEx();
             this.tbVideoTime = new System.Windows.Forms.TextBox();
             this.pointPanel = new System.Windows.Forms.Panel();
@@ -43,11 +48,6 @@
             this.lblClose = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblStop = new System.Windows.Forms.Label();
-            this.lblRadio = new System.Windows.Forms.Label();
-            this.lblNext = new System.Windows.Forms.Label();
-            this.lblPause = new System.Windows.Forms.Label();
-            this.lblPrev = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -61,9 +61,9 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(602, 335);
+            this.panel1.Size = new System.Drawing.Size(602, 361);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -85,11 +85,22 @@
             this.panel2.Size = new System.Drawing.Size(602, 67);
             this.panel2.TabIndex = 1;
             // 
+            // lblStop
+            // 
+            this.lblStop.Image = global::vlc.net.Resource1.停止;
+            this.lblStop.Location = new System.Drawing.Point(296, 32);
+            this.lblStop.Name = "lblStop";
+            this.lblStop.Size = new System.Drawing.Size(28, 15);
+            this.lblStop.TabIndex = 16;
+            this.lblStop.Tag = "停止";
+            this.lblStop.Click += new System.EventHandler(this.lblStop_Click);
+            this.lblStop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
+            // 
             // trackBarVolume
             // 
             this.trackBarVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBarVolume.AutoSize = false;
-            this.trackBarVolume.ColorTable = trackBarColorTable1;
+            this.trackBarVolume.ColorTable = trackBarColorTable5;
             this.trackBarVolume.Location = new System.Drawing.Point(458, 31);
             this.trackBarVolume.Maximum = 100;
             this.trackBarVolume.Name = "trackBarVolume";
@@ -100,10 +111,55 @@
             this.trackBarVolume.MouseDown += new System.Windows.Forms.MouseEventHandler(this.trackBarVolume_MouseDown);
             this.trackBarVolume.MouseMove += new System.Windows.Forms.MouseEventHandler(this.trackBar1_MouseMove);
             // 
+            // lblRadio
+            // 
+            this.lblRadio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRadio.Image = ((System.Drawing.Image)(resources.GetObject("lblRadio.Image")));
+            this.lblRadio.Location = new System.Drawing.Point(438, 32);
+            this.lblRadio.Name = "lblRadio";
+            this.lblRadio.Size = new System.Drawing.Size(23, 15);
+            this.lblRadio.TabIndex = 14;
+            this.lblRadio.Tag = "声音";
+            this.lblRadio.Click += new System.EventHandler(this.lblRadio_Click);
+            this.lblRadio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
+            // 
+            // lblNext
+            // 
+            this.lblNext.Image = global::vlc.net.Resource1.下一个;
+            this.lblNext.Location = new System.Drawing.Point(259, 32);
+            this.lblNext.Name = "lblNext";
+            this.lblNext.Size = new System.Drawing.Size(28, 15);
+            this.lblNext.TabIndex = 13;
+            this.lblNext.Tag = "下一个";
+            this.lblNext.Click += new System.EventHandler(this.lblNext_Click);
+            this.lblNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
+            // 
+            // lblPause
+            // 
+            this.lblPause.Image = global::vlc.net.Resource1.暂停;
+            this.lblPause.Location = new System.Drawing.Point(222, 32);
+            this.lblPause.Name = "lblPause";
+            this.lblPause.Size = new System.Drawing.Size(28, 15);
+            this.lblPause.TabIndex = 12;
+            this.lblPause.Tag = "暂停";
+            this.lblPause.Click += new System.EventHandler(this.lblPause_Click);
+            this.lblPause.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
+            // 
+            // lblPrev
+            // 
+            this.lblPrev.Image = global::vlc.net.Resource1.上一个;
+            this.lblPrev.Location = new System.Drawing.Point(185, 32);
+            this.lblPrev.Name = "lblPrev";
+            this.lblPrev.Size = new System.Drawing.Size(28, 15);
+            this.lblPrev.TabIndex = 11;
+            this.lblPrev.Tag = "上一个";
+            this.lblPrev.Click += new System.EventHandler(this.lblPrev_Click);
+            this.lblPrev.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
+            // 
             // trackBar1
             // 
             this.trackBar1.AutoSize = false;
-            this.trackBar1.ColorTable = trackBarColorTable2;
+            this.trackBar1.ColorTable = trackBarColorTable6;
             this.trackBar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.trackBar1.Location = new System.Drawing.Point(0, 7);
             this.trackBar1.Name = "trackBar1";
@@ -148,6 +204,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(603, 25);
             this.panel3.TabIndex = 2;
+            this.panel3.Visible = false;
             // 
             // lblClose
             // 
@@ -189,71 +246,15 @@
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
-            // lblStop
-            // 
-            this.lblStop.Image = global::vlc.net.Resource1.停止;
-            this.lblStop.Location = new System.Drawing.Point(296, 32);
-            this.lblStop.Name = "lblStop";
-            this.lblStop.Size = new System.Drawing.Size(28, 15);
-            this.lblStop.TabIndex = 16;
-            this.lblStop.Tag = "停止";
-            this.lblStop.Click += new System.EventHandler(this.lblStop_Click);
-            this.lblStop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
-            // 
-            // lblRadio
-            // 
-            this.lblRadio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblRadio.Image = ((System.Drawing.Image)(resources.GetObject("lblRadio.Image")));
-            this.lblRadio.Location = new System.Drawing.Point(438, 32);
-            this.lblRadio.Name = "lblRadio";
-            this.lblRadio.Size = new System.Drawing.Size(23, 15);
-            this.lblRadio.TabIndex = 14;
-            this.lblRadio.Tag = "声音";
-            this.lblRadio.Click += new System.EventHandler(this.lblRadio_Click);
-            this.lblRadio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
-            // 
-            // lblNext
-            // 
-            this.lblNext.Image = global::vlc.net.Resource1.下一个;
-            this.lblNext.Location = new System.Drawing.Point(259, 32);
-            this.lblNext.Name = "lblNext";
-            this.lblNext.Size = new System.Drawing.Size(28, 15);
-            this.lblNext.TabIndex = 13;
-            this.lblNext.Tag = "下一个";
-            this.lblNext.Click += new System.EventHandler(this.lblNext_Click);
-            this.lblNext.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
-            // 
-            // lblPause
-            // 
-            this.lblPause.Image = global::vlc.net.Resource1.播放;
-            this.lblPause.Location = new System.Drawing.Point(222, 32);
-            this.lblPause.Name = "lblPause";
-            this.lblPause.Size = new System.Drawing.Size(28, 15);
-            this.lblPause.TabIndex = 12;
-            this.lblPause.Tag = "暂停";
-            this.lblPause.Click += new System.EventHandler(this.lblPause_Click);
-            this.lblPause.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
-            // 
-            // lblPrev
-            // 
-            this.lblPrev.Image = global::vlc.net.Resource1.上一个;
-            this.lblPrev.Location = new System.Drawing.Point(185, 32);
-            this.lblPrev.Name = "lblPrev";
-            this.lblPrev.Size = new System.Drawing.Size(28, 15);
-            this.lblPrev.TabIndex = 11;
-            this.lblPrev.Tag = "上一个";
-            this.lblPrev.Click += new System.EventHandler(this.lblPrev_Click);
-            this.lblPrev.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
-            // 
             // VideoPlayerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 428);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VideoPlayerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
