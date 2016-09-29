@@ -231,7 +231,7 @@
             this.labelControlbiaoti.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelControlbiaoti.Location = new System.Drawing.Point(0, 0);
             this.labelControlbiaoti.Name = "labelControlbiaoti";
-            this.labelControlbiaoti.Size = new System.Drawing.Size(555, 43);
+            this.labelControlbiaoti.Size = new System.Drawing.Size(555, 42);
             this.labelControlbiaoti.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -244,7 +244,7 @@
             this.flowLayoutPanel1.Controls.Add(this.Label_czsy);
             this.flowLayoutPanel1.Controls.Add(this.Label_dzjc);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(183, 43);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(183, 42);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(906, 39);
             this.flowLayoutPanel1.TabIndex = 1;
@@ -255,11 +255,12 @@
             this.Label_gs.Appearance.Image = global::GenerTrafficInterview.Resource1.yiji1;
             this.Label_gs.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_gs.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.Label_gs.Dock = System.Windows.Forms.DockStyle.Left;
             this.Label_gs.Location = new System.Drawing.Point(0, 0);
             this.Label_gs.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.Label_gs.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.Label_gs.Margin = new System.Windows.Forms.Padding(0);
             this.Label_gs.Name = "Label_gs";
-            this.Label_gs.Size = new System.Drawing.Size(109, 39);
+            this.Label_gs.Size = new System.Drawing.Size(107, 39);
             this.Label_gs.TabIndex = 0;
             this.Label_gs.Text = "概述";
             this.Label_gs.Click += new System.EventHandler(this.Label_gs_Click);
@@ -269,8 +270,9 @@
             this.Label_zbgz.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_zbgz.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_zbgz.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.Label_zbgz.Location = new System.Drawing.Point(115, 0);
-            this.Label_zbgz.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.Label_zbgz.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Label_zbgz.Location = new System.Drawing.Point(107, 0);
+            this.Label_zbgz.Margin = new System.Windows.Forms.Padding(0);
             this.Label_zbgz.Name = "Label_zbgz";
             this.Label_zbgz.Size = new System.Drawing.Size(107, 39);
             this.Label_zbgz.TabIndex = 1;
@@ -282,10 +284,11 @@
             this.Label_bybg.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.Label_bybg.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_bybg.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.Label_bybg.Location = new System.Drawing.Point(228, 0);
-            this.Label_bybg.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.Label_bybg.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Label_bybg.Location = new System.Drawing.Point(214, 0);
+            this.Label_bybg.Margin = new System.Windows.Forms.Padding(0);
             this.Label_bybg.Name = "Label_bybg";
-            this.Label_bybg.Size = new System.Drawing.Size(108, 36);
+            this.Label_bybg.Size = new System.Drawing.Size(107, 39);
             this.Label_bybg.TabIndex = 2;
             this.Label_bybg.Text = "保养保管";
             this.Label_bybg.Click += new System.EventHandler(this.Label_bybg_Click);
@@ -295,10 +298,11 @@
             this.Label_jccl.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.Label_jccl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_jccl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.Label_jccl.Location = new System.Drawing.Point(342, 0);
-            this.Label_jccl.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.Label_jccl.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Label_jccl.Location = new System.Drawing.Point(321, 0);
+            this.Label_jccl.Margin = new System.Windows.Forms.Padding(0);
             this.Label_jccl.Name = "Label_jccl";
-            this.Label_jccl.Size = new System.Drawing.Size(110, 36);
+            this.Label_jccl.Size = new System.Drawing.Size(107, 39);
             this.Label_jccl.TabIndex = 3;
             this.Label_jccl.Text = "检查处理";
             this.Label_jccl.Click += new System.EventHandler(this.Label_jccl_Click);
@@ -308,10 +312,11 @@
             this.Label_czsy.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.Label_czsy.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_czsy.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.Label_czsy.Location = new System.Drawing.Point(458, 0);
-            this.Label_czsy.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.Label_czsy.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Label_czsy.Location = new System.Drawing.Point(428, 0);
+            this.Label_czsy.Margin = new System.Windows.Forms.Padding(0);
             this.Label_czsy.Name = "Label_czsy";
-            this.Label_czsy.Size = new System.Drawing.Size(114, 36);
+            this.Label_czsy.Size = new System.Drawing.Size(107, 39);
             this.Label_czsy.TabIndex = 4;
             this.Label_czsy.Text = "操作使用";
             this.Label_czsy.Click += new System.EventHandler(this.Label_czsy_Click);
@@ -321,10 +326,10 @@
             this.Label_dzjc.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.Label_dzjc.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.Label_dzjc.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.Label_dzjc.Location = new System.Drawing.Point(578, 0);
-            this.Label_dzjc.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.Label_dzjc.Location = new System.Drawing.Point(535, 0);
+            this.Label_dzjc.Margin = new System.Windows.Forms.Padding(0);
             this.Label_dzjc.Name = "Label_dzjc";
-            this.Label_dzjc.Size = new System.Drawing.Size(120, 39);
+            this.Label_dzjc.Size = new System.Drawing.Size(107, 39);
             this.Label_dzjc.TabIndex = 5;
             this.Label_dzjc.Text = "电子教材";
             // 
@@ -336,7 +341,7 @@
             this.paneltop.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneltop.Location = new System.Drawing.Point(0, 0);
             this.paneltop.Name = "paneltop";
-            this.paneltop.Size = new System.Drawing.Size(1089, 82);
+            this.paneltop.Size = new System.Drawing.Size(1089, 81);
             this.paneltop.TabIndex = 2;
             // 
             // paneltitle
@@ -349,7 +354,7 @@
             this.paneltitle.Location = new System.Drawing.Point(183, 0);
             this.paneltitle.Margin = new System.Windows.Forms.Padding(0);
             this.paneltitle.Name = "paneltitle";
-            this.paneltitle.Size = new System.Drawing.Size(906, 43);
+            this.paneltitle.Size = new System.Drawing.Size(906, 42);
             this.paneltitle.TabIndex = 4;
             // 
             // labelControlhlp
@@ -360,7 +365,7 @@
             this.labelControlhlp.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelControlhlp.Location = new System.Drawing.Point(770, 0);
             this.labelControlhlp.Name = "labelControlhlp";
-            this.labelControlhlp.Size = new System.Drawing.Size(68, 43);
+            this.labelControlhlp.Size = new System.Drawing.Size(68, 42);
             this.labelControlhlp.TabIndex = 6;
             this.labelControlhlp.Text = "帮助";
             // 
@@ -372,7 +377,7 @@
             this.labelControlesc.Dock = System.Windows.Forms.DockStyle.Right;
             this.labelControlesc.Location = new System.Drawing.Point(838, 0);
             this.labelControlesc.Name = "labelControlesc";
-            this.labelControlesc.Size = new System.Drawing.Size(68, 43);
+            this.labelControlesc.Size = new System.Drawing.Size(68, 42);
             this.labelControlesc.TabIndex = 5;
             this.labelControlesc.Text = "退出";
             this.labelControlesc.Click += new System.EventHandler(this.labelControlesc_Click);
@@ -383,7 +388,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(183, 82);
+            this.panel2.Size = new System.Drawing.Size(183, 81);
             this.panel2.TabIndex = 2;
             // 
             // pictureBox1
@@ -502,7 +507,7 @@
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 147;
             this.navBarControl1.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.SideBar;
-            this.navBarControl1.Size = new System.Drawing.Size(199, 714);
+            this.navBarControl1.Size = new System.Drawing.Size(201, 714);
             this.navBarControl1.SkinExplorerBarViewScrollStyle = DevExpress.XtraNavBar.SkinExplorerBarViewScrollStyle.Buttons;
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";
@@ -1892,9 +1897,9 @@
             this.panel_NaviAndNr.Controls.Add(this.flowLayoutPanel3);
             this.panel_NaviAndNr.Controls.Add(this.flowLayoutPaneldaohang);
             this.panel_NaviAndNr.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_NaviAndNr.Location = new System.Drawing.Point(0, 82);
+            this.panel_NaviAndNr.Location = new System.Drawing.Point(0, 81);
             this.panel_NaviAndNr.Name = "panel_NaviAndNr";
-            this.panel_NaviAndNr.Size = new System.Drawing.Size(1089, 698);
+            this.panel_NaviAndNr.Size = new System.Drawing.Size(1089, 699);
             this.panel_NaviAndNr.TabIndex = 5;
             // 
             // panelPlayer
@@ -1904,7 +1909,7 @@
             this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPlayer.Location = new System.Drawing.Point(193, 39);
             this.panelPlayer.Name = "panelPlayer";
-            this.panelPlayer.Size = new System.Drawing.Size(896, 659);
+            this.panelPlayer.Size = new System.Drawing.Size(896, 660);
             this.panelPlayer.TabIndex = 5;
             // 
             // extWebBrowser1
@@ -2030,7 +2035,7 @@
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(183, 0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(10, 698);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(10, 699);
             this.flowLayoutPanel3.TabIndex = 8;
             // 
             // flowLayoutPaneldaohang
@@ -2042,7 +2047,7 @@
             this.flowLayoutPaneldaohang.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPaneldaohang.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPaneldaohang.Name = "flowLayoutPaneldaohang";
-            this.flowLayoutPaneldaohang.Size = new System.Drawing.Size(183, 698);
+            this.flowLayoutPaneldaohang.Size = new System.Drawing.Size(183, 699);
             this.flowLayoutPaneldaohang.TabIndex = 9;
             // 
             // panelgsdaohang
@@ -2101,7 +2106,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 93);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(191, 710);
+            this.panel3.Size = new System.Drawing.Size(193, 710);
             this.panel3.TabIndex = 6;
             // 
             // Form1

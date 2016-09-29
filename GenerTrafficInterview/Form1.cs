@@ -20,7 +20,7 @@ namespace GenerTrafficInterview
         public Form1()
         {
             InitializeComponent();
-            labelControlbiaoti.Text = "NJ2046型1.5吨越野汽车操作使用多媒体教程";
+            labelControlbiaoti.Text = "依维柯NJ2046型1.5吨越野汽车操作使用多媒体教程";
             //开始视频
             //FirstForm firstForm = new FirstForm();
             //firstForm.WindowState = FormWindowState.Maximized;
@@ -46,7 +46,7 @@ namespace GenerTrafficInterview
             loadNavi();
             BindNaviItemEvent();
             this.navBarGroup6.Expanded = false;
-            XmlReadMode("Label_gs");
+            //XmlReadMode("Label_gs");
             setNaviGroupVisible();
             setHeaderVisible();
             setShrink();
@@ -346,6 +346,14 @@ namespace GenerTrafficInterview
             this.labelControl54.Click += new System.EventHandler(this.labelControl1s_Click);
             this.labelControl55.Click += new System.EventHandler(this.labelControl1s_Click);
 
+            this.Header1.Click += new EventHandler(this.labelControl1_Click);
+            this.Header2.Click += new EventHandler(this.labelControl1_Click);
+            this.Header3.Click += new EventHandler(this.labelControl1_Click);
+            this.Header4.Click += new EventHandler(this.labelControl1_Click);
+            this.Header5.Click += new EventHandler(this.labelControl1_Click);
+            this.Header6.Click += new EventHandler(this.labelControl1_Click);
+            this.Header7.Click += new EventHandler(this.labelControl1_Click);
+            this.Header8.Click += new EventHandler(this.labelControl1_Click);
         }
 
         //全部折叠
@@ -950,20 +958,156 @@ namespace GenerTrafficInterview
             DevExpress.XtraEditors.LabelControl GenerNaviItem = (sender as DevExpress.XtraEditors.LabelControl);
             labelControlState();
             GenerNaviItem.Appearance.Image = Resource1.anxia;
-
-            if (form == null)
+            switch (GenerNaviItem.Name)
             {
-                form = new vlc.net.VideoPlayerForm();
+                case "labelControl7":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header1.Text = "燃油供给系统";
+                    Header2.Text = "进排气系统";
+                    break;
+                case "labelControl12":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header3.Visible = true;
+                    Header4.Visible = true;
+                    Header1.Text = "车桥";
+                    Header2.Text = "车轮";
+                    Header3.Text = "轮胎";
+                    Header4.Text = "悬架";
+                    break;
+                case "labelControl14":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
 
-                form.TopLevel = false;  //非顶级控件
-                panelPlayer.Controls.Add(form);
-                panelPlayer.Visible = true;
-                form.Dock = DockStyle.Fill;
-                form.Show();
-                form.Parent = panelPlayer;
+                    Header1.Text = "行车制动";
+                    Header2.Text = "驻车制动装置";
+                    break;
+                case "labelControl19":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header1.Text = "蓄电池";
+                    Header2.Text = "发电机";
+                    break;
+                case "labelControl28":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header3.Visible = true;
+                    Header4.Visible = true;
+                    Header5.Visible = true;
+                    Header1.Text = "日常保养";
+                    Header2.Text = "一级保养";
+                    Header3.Text = "换季保养";
+                    Header4.Text = "停驶车保养";
+                    Header5.Text = "一期保养";
+                    break;
+                case "labelControl29":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header3.Visible = true;
+                    Header4.Visible = true;
+                    Header5.Visible = true;
+                    Header1.Text = "检查燃油";
+                    Header2.Text = "检查与更换机油";
+                    Header3.Text = "检查动力转向油";
+                    Header4.Text = "检查制动液";
+                    Header5.Text = "检查冷却液";
+                    break;
+                case "labelControl30":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header1.Text = "固定车场停放";
+                    Header2.Text = "临时车场停放";
+                    break;
+                case "labelControl31":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header1.Text = "封存方式";
+                    Header2.Text = "封存项目、方法与要求";
+                    break;
+                case "labelControl32":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header3.Visible = true;
+                    Header1.Text = "启封方式";
+                    Header2.Text = "启封工作程序";
+                    Header3.Text = "紧急启封工作程序";
+                    break;
+                case "labelControl41":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header3.Visible = true;
+                    Header1.Text = "发动机无法起动";
+                    Header2.Text = "发动机冒黑烟";
+                    Header3.Text = "发动机自行熄火";
+                    break;
+                case "labelControl42":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header3.Visible = true;
+                    Header4.Visible = true;
+                    Header5.Visible = true;
+                    Header6.Visible = true;
+                    Header1.Text = "转向沉重";
+                    Header2.Text = "制动拖滞、制动鼓发烫";
+                    Header3.Text = "制动器有异响";
+                    Header4.Text = "汽车偏驶";
+                    Header5.Text = "轮胎磨损过快";
+                    Header6.Text = "轮胎磨损不均";
+                    break;
+                case "labelControl43":
+                    setHeaderVisible();
+                    this.FL_NR_HEADER.Visible = true;
+                    Header1.Visible = true;
+                    Header2.Visible = true;
+                    Header3.Visible = true;
+                    Header4.Visible = true;
+                    Header5.Visible = true;
+                    Header1.Text = "全车无电";
+                    Header2.Text = "起动机不工作";
+                    Header3.Text = "发电机不发电";
+                    Header4.Text = "前照灯不亮";
+                    Header5.Text = "制动灯不亮";
+                    break;
+                default:
+                    setHeaderVisible();
+                    if (form == null)
+                    {
+                        form = new vlc.net.VideoPlayerForm();
+
+                        form.TopLevel = false;  //非顶级控件
+                        panelPlayer.Controls.Add(form);
+                        panelPlayer.Visible = true;
+                        form.Dock = DockStyle.Fill;
+                        form.Show();
+                        form.Parent = panelPlayer;
+                    }
+                    form.Play("Video\\" + GenerNaviItem.Text.Trim() + ".mov");
+                    form.videoName = GenerNaviItem.Text.Trim() + ".mov";
+                    break;
             }
-            form.Play("Video\\" + GenerNaviItem.Text.Trim() + ".mov");
-            form.videoName = GenerNaviItem.Text.Trim() + ".mov";
         }
 
         ///
