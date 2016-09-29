@@ -495,13 +495,14 @@
             this.navBarItemgs1,
             this.navBarItemgs2,
             this.navBarItemgs3});
-            this.navBarControl1.Location = new System.Drawing.Point(-8, -3);
+            this.navBarControl1.Location = new System.Drawing.Point(-8, -4);
             this.navBarControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.navBarControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.navBarControl1.Margin = new System.Windows.Forms.Padding(0);
             this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.OptionsNavPane.ExpandedWidth = 157;
-            this.navBarControl1.Size = new System.Drawing.Size(201, 718);
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = 147;
+            this.navBarControl1.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.SideBar;
+            this.navBarControl1.Size = new System.Drawing.Size(199, 714);
             this.navBarControl1.SkinExplorerBarViewScrollStyle = DevExpress.XtraNavBar.SkinExplorerBarViewScrollStyle.Buttons;
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";
@@ -512,7 +513,6 @@
             // navBarGroupgs
             // 
             this.navBarGroupgs.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.navBarGroupgs.Appearance.BorderColor = System.Drawing.Color.Blue;
             this.navBarGroupgs.Appearance.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.navBarGroupgs.Appearance.Options.UseBackColor = true;
             this.navBarGroupgs.Appearance.Options.UseFont = true;
@@ -534,7 +534,7 @@
             this.navBarGroupControlContainer1.Controls.Add(this.labelControl5);
             this.navBarGroupControlContainer1.Controls.Add(this.labelControl4);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(181, 90);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(183, 348);
             this.navBarGroupControlContainer1.TabIndex = 1;
             // 
             // labelControl6
@@ -545,7 +545,7 @@
             this.labelControl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl6.Location = new System.Drawing.Point(0, 60);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(181, 30);
+            this.labelControl6.Size = new System.Drawing.Size(183, 30);
             this.labelControl6.TabIndex = 5;
             this.labelControl6.Text = "labelControl06";
             // 
@@ -557,7 +557,7 @@
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl5.Location = new System.Drawing.Point(0, 30);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(181, 30);
+            this.labelControl5.Size = new System.Drawing.Size(183, 30);
             this.labelControl5.TabIndex = 4;
             this.labelControl5.Text = "labelControl05";
             // 
@@ -569,7 +569,7 @@
             this.labelControl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl4.Location = new System.Drawing.Point(0, 0);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(181, 30);
+            this.labelControl4.Size = new System.Drawing.Size(183, 30);
             this.labelControl4.TabIndex = 3;
             this.labelControl4.Text = "labelControl04";
             // 
@@ -605,7 +605,7 @@
             this.navBarGroupControlContainer2.Controls.Add(this.labelControl8);
             this.navBarGroupControlContainer2.Controls.Add(this.labelControl7);
             this.navBarGroupControlContainer2.Name = "navBarGroupControlContainer2";
-            this.navBarGroupControlContainer2.Size = new System.Drawing.Size(181, 120);
+            this.navBarGroupControlContainer2.Size = new System.Drawing.Size(162, 120);
             this.navBarGroupControlContainer2.TabIndex = 3;
             // 
             // labelControl10
@@ -616,7 +616,7 @@
             this.labelControl10.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl10.Location = new System.Drawing.Point(0, 90);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(181, 30);
+            this.labelControl10.Size = new System.Drawing.Size(162, 30);
             this.labelControl10.TabIndex = 9;
             this.labelControl10.Text = "labelControl10";
             // 
@@ -628,7 +628,7 @@
             this.labelControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl9.Location = new System.Drawing.Point(0, 60);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(181, 30);
+            this.labelControl9.Size = new System.Drawing.Size(162, 30);
             this.labelControl9.TabIndex = 8;
             this.labelControl9.Text = "labelControl09";
             // 
@@ -640,7 +640,7 @@
             this.labelControl8.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl8.Location = new System.Drawing.Point(0, 30);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(181, 30);
+            this.labelControl8.Size = new System.Drawing.Size(162, 30);
             this.labelControl8.TabIndex = 7;
             this.labelControl8.Text = "labelControl08";
             // 
@@ -652,7 +652,7 @@
             this.labelControl7.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl7.Location = new System.Drawing.Point(0, 0);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(181, 30);
+            this.labelControl7.Size = new System.Drawing.Size(162, 30);
             this.labelControl7.TabIndex = 6;
             this.labelControl7.Text = "labelControl07";
             // 
@@ -1586,8 +1586,10 @@
             // navBarGroup8
             // 
             this.navBarGroup8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
+            this.navBarGroup8.Appearance.BorderColor = System.Drawing.Color.Red;
             this.navBarGroup8.Appearance.Font = new System.Drawing.Font("微软雅黑", 11F);
             this.navBarGroup8.Appearance.Options.UseBackColor = true;
+            this.navBarGroup8.Appearance.Options.UseBorderColor = true;
             this.navBarGroup8.Appearance.Options.UseFont = true;
             this.navBarGroup8.AppearanceBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.navBarGroup8.AppearanceBackground.Options.UseBackColor = true;
@@ -2049,6 +2051,7 @@
             this.panelgsdaohang.Controls.Add(this.labelControl3);
             this.panelgsdaohang.Controls.Add(this.labelControl2);
             this.panelgsdaohang.Controls.Add(this.labelControl1);
+            this.panelgsdaohang.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelgsdaohang.Location = new System.Drawing.Point(0, 0);
             this.panelgsdaohang.Margin = new System.Windows.Forms.Padding(0);
             this.panelgsdaohang.Name = "panelgsdaohang";
@@ -2093,13 +2096,12 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.panel3.Controls.Add(this.navBarControl1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 93);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(204, 688);
+            this.panel3.Size = new System.Drawing.Size(191, 710);
             this.panel3.TabIndex = 6;
             // 
             // Form1

@@ -142,6 +142,10 @@ namespace vlc.net
             //播放
             timer1.Start();
             vlc_player_.Play();
+            //timer1.Enabled = !timer1.Enabled;
+            lblPause.Image = Resource1.暂停;
+            lblPause.Tag = "暂停";
+            pictureBox1.Visible = false;
         }
 
         private void btnReset_Click(object sender, EventArgs e)
