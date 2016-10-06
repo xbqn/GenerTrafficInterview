@@ -524,18 +524,18 @@ namespace GenerTrafficInterview
         }
 
 
-        private void navBarItem_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
-        {
-            //setImgforNavi();
-            DevExpress.XtraNavBar.NavBarItem GenerNaviItem = (sender as DevExpress.XtraNavBar.NavBarItem);
-            //GenerNaviItem.SmallImage = Resource1.selected;
-            XmlReadMode(GenerNaviItem.Name);
-            if (GenerNaviItem.Name.Equals("navBarItem1"))
-            {
+        //private void navBarItem_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        //{
+        //    //setImgforNavi();
+        //    DevExpress.XtraNavBar.NavBarItem GenerNaviItem = (sender as DevExpress.XtraNavBar.NavBarItem);
+        //    //GenerNaviItem.SmallImage = Resource1.selected;
+        //    XmlReadMode(GenerNaviItem.Name);
+        //    if (GenerNaviItem.Name.Equals("navBarItem1"))
+        //    {
 
-                extWebBrowser1.Navigate(path);
-            }
-        }
+        //        extWebBrowser1.Navigate(path);
+        //    }
+        //}
 
         #region  暂定注释
 
@@ -735,6 +735,17 @@ namespace GenerTrafficInterview
         {
             //开始图片隐藏
             pbMain.Visible = false;
+            if (form == null) //加载视频
+            {
+                form = new vlc.net.VideoPlayerForm();
+
+                form.TopLevel = false;  //非顶级控件
+                panelPlayer.Controls.Add(form);
+                panelPlayer.Visible = true;
+                form.Dock = DockStyle.Fill;
+                form.Show();
+                form.Parent = panelPlayer;
+            }
             //先设置颜色
             Label_gs.ForeColor = Color.White;
             Label_gs.Appearance.Image = Resource1.yiji2;
@@ -766,6 +777,17 @@ namespace GenerTrafficInterview
         {
             //开始图片隐藏
             pbMain.Visible = false;
+            if (form == null) //加载视频
+            {
+                form = new vlc.net.VideoPlayerForm();
+
+                form.TopLevel = false;  //非顶级控件
+                panelPlayer.Controls.Add(form);
+                panelPlayer.Visible = true;
+                form.Dock = DockStyle.Fill;
+                form.Show();
+                form.Parent = panelPlayer;
+            }
 
             Label_zbgz.ForeColor = Color.White;
             Label_zbgz.Appearance.Image = Resource1.yiji2;
@@ -794,6 +816,17 @@ namespace GenerTrafficInterview
         {
             //开始图片隐藏
             pbMain.Visible = false;
+            if (form == null) //加载视频
+            {
+                form = new vlc.net.VideoPlayerForm();
+
+                form.TopLevel = false;  //非顶级控件
+                panelPlayer.Controls.Add(form);
+                panelPlayer.Visible = true;
+                form.Dock = DockStyle.Fill;
+                form.Show();
+                form.Parent = panelPlayer;
+            }
 
             Label_bybg.ForeColor = Color.White;
             Label_bybg.Appearance.Image = Resource1.yiji2;
@@ -819,6 +852,17 @@ namespace GenerTrafficInterview
         {
             //开始图片隐藏
             pbMain.Visible = false;
+            if (form == null) //加载视频
+            {
+                form = new vlc.net.VideoPlayerForm();
+
+                form.TopLevel = false;  //非顶级控件
+                panelPlayer.Controls.Add(form);
+                panelPlayer.Visible = true;
+                form.Dock = DockStyle.Fill;
+                form.Show();
+                form.Parent = panelPlayer;
+            }
 
             Label_jccl.ForeColor = Color.White;
             Label_jccl.Appearance.Image = Resource1.yiji2;
@@ -845,7 +889,17 @@ namespace GenerTrafficInterview
         {
             //开始图片隐藏
             pbMain.Visible = false;
+            if (form == null) //加载视频
+            {
+                form = new vlc.net.VideoPlayerForm();
 
+                form.TopLevel = false;  //非顶级控件
+                panelPlayer.Controls.Add(form);
+                panelPlayer.Visible = true;
+                form.Dock = DockStyle.Fill;
+                form.Show();
+                form.Parent = panelPlayer;
+            }
 
             Label_czsy.ForeColor = Color.White;
             Label_czsy.Appearance.Image = Resource1.yiji2;
@@ -937,17 +991,6 @@ namespace GenerTrafficInterview
             //labelControlState();
             //GenerNaviItem.Appearance.Image = Resource1.anxia;
 
-            if (form == null)
-            {
-                form = new vlc.net.VideoPlayerForm();
-
-                form.TopLevel = false;  //非顶级控件
-                panelPlayer.Controls.Add(form);
-                panelPlayer.Visible = true;
-                form.Dock = DockStyle.Fill;
-                form.Show();
-                form.Parent = panelPlayer;
-            }
             form.Play("Video\\" + GenerNaviItem.Text.Trim() + ".mov");
             form.videoName = GenerNaviItem.Text.Trim() + ".mov";
         }
@@ -1110,11 +1153,10 @@ namespace GenerTrafficInterview
             }
         }
 
-        ///
-        /// 鼠标左键单击菜单功能组的时候展开对应组
-        ///
-        ///
-        ///
+        
+       /// <summary>
+       /// 鼠标左键单击菜单功能组的时候展开对应组
+       /// </summary>
         private void navBarControl1_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -1125,11 +1167,9 @@ namespace GenerTrafficInterview
                     hitInfo.Group.Expanded = !hitInfo.Group.Expanded;
             }
         }
-        ///
+        /// <summary>
         /// 鼠标进入菜单功能组上面的时候变成手状样式
-        ///
-        ///
-        ///
+        /// </summary>
         private void navBarControl1_MouseMove(object sender, MouseEventArgs e)
         {
             DevExpress.XtraNavBar.NavBarControl navBar = sender as DevExpress.XtraNavBar.NavBarControl;

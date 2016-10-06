@@ -29,10 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            CSharpWin.TrackBarColorTable trackBarColorTable5 = new CSharpWin.TrackBarColorTable();
+            CSharpWin.TrackBarColorTable trackBarColorTable1 = new CSharpWin.TrackBarColorTable();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VideoPlayerForm));
-            CSharpWin.TrackBarColorTable trackBarColorTable6 = new CSharpWin.TrackBarColorTable();
+            CSharpWin.TrackBarColorTable trackBarColorTable2 = new CSharpWin.TrackBarColorTable();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TransVideoPanel = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblStop = new System.Windows.Forms.Label();
             this.trackBarVolume = new CSharpWin.TrackBarEx();
@@ -43,16 +49,12 @@
             this.trackBar1 = new CSharpWin.TrackBarEx();
             this.tbVideoTime = new System.Windows.Forms.TextBox();
             this.pointPanel = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblClose = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,16 +63,86 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.TransVideoPanel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(602, 361);
+            this.panel1.Size = new System.Drawing.Size(751, 470);
             this.panel1.TabIndex = 0;
+            // 
+            // TransVideoPanel
+            // 
+            this.TransVideoPanel.BackColor = System.Drawing.Color.Transparent;
+            this.TransVideoPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TransVideoPanel.Location = new System.Drawing.Point(0, 0);
+            this.TransVideoPanel.Name = "TransVideoPanel";
+            this.TransVideoPanel.Size = new System.Drawing.Size(751, 470);
+            this.TransVideoPanel.TabIndex = 0;
+            this.TransVideoPanel.Tag = "112222";
+            this.TransVideoPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TransVideoPanel_MouseDown);
+            this.TransVideoPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TransVideoPanel_MouseMove);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
+            this.panel3.Controls.Add(this.lblClose);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(752, 25);
+            this.panel3.TabIndex = 2;
+            this.panel3.Visible = false;
+            // 
+            // lblClose
+            // 
+            this.lblClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblClose.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblClose.Location = new System.Drawing.Point(687, 0);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(65, 25);
+            this.lblClose.TabIndex = 1;
+            this.lblClose.Text = "返回";
+            this.lblClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblClose.Visible = false;
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            this.lblClose.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "视  频";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::vlc.net.Resource1.大暂停;
+            this.pictureBox1.InitialImage = global::vlc.net.Resource1.大暂停;
+            this.pictureBox1.Location = new System.Drawing.Point(187, 108);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(349, 160);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(94)))));
             this.panel2.Controls.Add(this.lblStop);
             this.panel2.Controls.Add(this.trackBarVolume);
             this.panel2.Controls.Add(this.lblRadio);
@@ -80,10 +152,11 @@
             this.panel2.Controls.Add(this.trackBar1);
             this.panel2.Controls.Add(this.tbVideoTime);
             this.panel2.Controls.Add(this.pointPanel);
-            this.panel2.Location = new System.Drawing.Point(0, 361);
+            this.panel2.Location = new System.Drawing.Point(1, 403);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(602, 67);
+            this.panel2.Size = new System.Drawing.Size(751, 67);
             this.panel2.TabIndex = 1;
+            this.panel2.Visible = false;
             // 
             // lblStop
             // 
@@ -100,8 +173,9 @@
             // 
             this.trackBarVolume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBarVolume.AutoSize = false;
-            this.trackBarVolume.ColorTable = trackBarColorTable5;
-            this.trackBarVolume.Location = new System.Drawing.Point(458, 31);
+            this.trackBarVolume.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(94)))));
+            this.trackBarVolume.ColorTable = trackBarColorTable1;
+            this.trackBarVolume.Location = new System.Drawing.Point(607, 31);
             this.trackBarVolume.Maximum = 100;
             this.trackBarVolume.Name = "trackBarVolume";
             this.trackBarVolume.Size = new System.Drawing.Size(120, 16);
@@ -115,7 +189,7 @@
             // 
             this.lblRadio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRadio.Image = ((System.Drawing.Image)(resources.GetObject("lblRadio.Image")));
-            this.lblRadio.Location = new System.Drawing.Point(438, 32);
+            this.lblRadio.Location = new System.Drawing.Point(587, 32);
             this.lblRadio.Name = "lblRadio";
             this.lblRadio.Size = new System.Drawing.Size(23, 15);
             this.lblRadio.TabIndex = 14;
@@ -159,11 +233,12 @@
             // trackBar1
             // 
             this.trackBar1.AutoSize = false;
-            this.trackBar1.ColorTable = trackBarColorTable6;
+            this.trackBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(94)))));
+            this.trackBar1.ColorTable = trackBarColorTable2;
             this.trackBar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.trackBar1.Location = new System.Drawing.Point(0, 7);
+            this.trackBar1.Location = new System.Drawing.Point(0, 0);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(602, 15);
+            this.trackBar1.Size = new System.Drawing.Size(751, 15);
             this.trackBar1.TabIndex = 7;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
@@ -172,7 +247,7 @@
             // 
             // tbVideoTime
             // 
-            this.tbVideoTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
+            this.tbVideoTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(97)))), ((int)(((byte)(94)))));
             this.tbVideoTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbVideoTime.Location = new System.Drawing.Point(27, 32);
             this.tbVideoTime.Name = "tbVideoTime";
@@ -183,76 +258,18 @@
             // 
             // pointPanel
             // 
-            this.pointPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pointPanel.Location = new System.Drawing.Point(0, 0);
+            this.pointPanel.Location = new System.Drawing.Point(439, 21);
             this.pointPanel.Name = "pointPanel";
-            this.pointPanel.Size = new System.Drawing.Size(602, 7);
+            this.pointPanel.Size = new System.Drawing.Size(63, 10);
             this.pointPanel.TabIndex = 8;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(202)))));
-            this.panel3.Controls.Add(this.lblClose);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(603, 25);
-            this.panel3.TabIndex = 2;
-            this.panel3.Visible = false;
-            // 
-            // lblClose
-            // 
-            this.lblClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblClose.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblClose.Location = new System.Drawing.Point(538, 0);
-            this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(65, 25);
-            this.lblClose.TabIndex = 1;
-            this.lblClose.Text = "返回";
-            this.lblClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblClose.Visible = false;
-            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
-            this.lblClose.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblClose_MouseMove);
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "视  频";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::vlc.net.Resource1.大暂停;
-            this.pictureBox1.InitialImage = global::vlc.net.Resource1.大暂停;
-            this.pictureBox1.Location = new System.Drawing.Point(187, 108);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 160);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
             // VideoPlayerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(603, 428);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(752, 472);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -260,12 +277,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "视  频";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -288,6 +306,7 @@
         private CSharpWin.TrackBarEx trackBarVolume;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblStop;
+        private System.Windows.Forms.Panel TransVideoPanel;
     }
 }
 

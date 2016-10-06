@@ -177,7 +177,6 @@
             this.navBarItem49 = new DevExpress.XtraNavBar.NavBarItem();
             this.panel_NaviAndNr = new System.Windows.Forms.Panel();
             this.panelPlayer = new System.Windows.Forms.Panel();
-            this.extWebBrowser1 = new GenerTrafficInterview.ExtWebBrowser();
             this.FL_NR_HEADER = new System.Windows.Forms.FlowLayoutPanel();
             this.Header1 = new DevExpress.XtraEditors.LabelControl();
             this.Header2 = new DevExpress.XtraEditors.LabelControl();
@@ -216,7 +215,6 @@
             this.navBarGroupControlContainer12.SuspendLayout();
             this.navBarGroupControlContainer13.SuspendLayout();
             this.panel_NaviAndNr.SuspendLayout();
-            this.panelPlayer.SuspendLayout();
             this.FL_NR_HEADER.SuspendLayout();
             this.flowLayoutPaneldaohang.SuspendLayout();
             this.panelgsdaohang.SuspendLayout();
@@ -262,7 +260,7 @@
             this.Label_gs.Name = "Label_gs";
             this.Label_gs.Size = new System.Drawing.Size(107, 39);
             this.Label_gs.TabIndex = 0;
-            this.Label_gs.Text = "概述";
+            this.Label_gs.Text = "概  述";
             this.Label_gs.Click += new System.EventHandler(this.Label_gs_Click);
             // 
             // Label_zbgz
@@ -413,7 +411,9 @@
             // 
             this.navBarControl1.ActiveGroup = this.navBarGroupgs;
             this.navBarControl1.Appearance.Background.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(179)))), ((int)(((byte)(205)))));
+            this.navBarControl1.Appearance.Background.Image = global::GenerTrafficInterview.Resource1.beijing2;
             this.navBarControl1.Appearance.Background.Options.UseBackColor = true;
+            this.navBarControl1.Appearance.Background.Options.UseImage = true;
             this.navBarControl1.Appearance.Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.navBarControl1.Appearance.Button.Options.UseBackColor = true;
             this.navBarControl1.Appearance.Item.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -433,6 +433,10 @@
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer11);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer12);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer13);
+            this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.navBarControl1.ExplorerBarGroupInterval = 1;
+            this.navBarControl1.ExplorerBarGroupOuterIndent = 0;
+            this.navBarControl1.ExplorerBarShowGroupButtons = false;
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroupgs,
             this.navBarGroup2,
@@ -500,14 +504,14 @@
             this.navBarItemgs1,
             this.navBarItemgs2,
             this.navBarItemgs3});
-            this.navBarControl1.Location = new System.Drawing.Point(-8, -4);
+            this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.navBarControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.navBarControl1.Margin = new System.Windows.Forms.Padding(0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 147;
             this.navBarControl1.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.SideBar;
-            this.navBarControl1.Size = new System.Drawing.Size(201, 714);
+            this.navBarControl1.Size = new System.Drawing.Size(190, 710);
             this.navBarControl1.SkinExplorerBarViewScrollStyle = DevExpress.XtraNavBar.SkinExplorerBarViewScrollStyle.Buttons;
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";
@@ -525,6 +529,7 @@
             this.navBarGroupgs.AppearanceBackground.Options.UseBackColor = true;
             this.navBarGroupgs.Caption = "       概述";
             this.navBarGroupgs.ControlContainer = this.navBarGroupControlContainer1;
+            this.navBarGroupgs.Expanded = true;
             this.navBarGroupgs.GroupClientHeight = 91;
             this.navBarGroupgs.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
             this.navBarGroupgs.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
@@ -539,7 +544,7 @@
             this.navBarGroupControlContainer1.Controls.Add(this.labelControl5);
             this.navBarGroupControlContainer1.Controls.Add(this.labelControl4);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(183, 348);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(188, 90);
             this.navBarGroupControlContainer1.TabIndex = 1;
             // 
             // labelControl6
@@ -550,7 +555,7 @@
             this.labelControl6.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl6.Location = new System.Drawing.Point(0, 60);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(183, 30);
+            this.labelControl6.Size = new System.Drawing.Size(188, 30);
             this.labelControl6.TabIndex = 5;
             this.labelControl6.Text = "labelControl06";
             // 
@@ -562,7 +567,7 @@
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl5.Location = new System.Drawing.Point(0, 30);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(183, 30);
+            this.labelControl5.Size = new System.Drawing.Size(188, 30);
             this.labelControl5.TabIndex = 4;
             this.labelControl5.Text = "labelControl05";
             // 
@@ -574,7 +579,7 @@
             this.labelControl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl4.Location = new System.Drawing.Point(0, 0);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(183, 30);
+            this.labelControl4.Size = new System.Drawing.Size(188, 30);
             this.labelControl4.TabIndex = 3;
             this.labelControl4.Text = "labelControl04";
             // 
@@ -1905,23 +1910,11 @@
             // panelPlayer
             // 
             this.panelPlayer.BackColor = System.Drawing.Color.White;
-            this.panelPlayer.Controls.Add(this.extWebBrowser1);
             this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPlayer.Location = new System.Drawing.Point(193, 39);
             this.panelPlayer.Name = "panelPlayer";
             this.panelPlayer.Size = new System.Drawing.Size(896, 660);
             this.panelPlayer.TabIndex = 5;
-            // 
-            // extWebBrowser1
-            // 
-            this.extWebBrowser1.Location = new System.Drawing.Point(569, 197);
-            this.extWebBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.extWebBrowser1.Name = "extWebBrowser1";
-            this.extWebBrowser1.ScriptErrorsSuppressed = true;
-            this.extWebBrowser1.Size = new System.Drawing.Size(242, 172);
-            this.extWebBrowser1.TabIndex = 4;
-            this.extWebBrowser1.Visible = false;
-            this.extWebBrowser1.BeforeNavigate += new System.EventHandler<GenerTrafficInterview.WebBrowserExtendedNavigatingEventArgs>(this.extWebBrowser1_BeforeNavigate);
             // 
             // FL_NR_HEADER
             // 
@@ -2106,7 +2099,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 93);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(193, 710);
+            this.panel3.Size = new System.Drawing.Size(190, 710);
             this.panel3.TabIndex = 6;
             // 
             // Form1
@@ -2143,7 +2136,6 @@
             this.navBarGroupControlContainer12.ResumeLayout(false);
             this.navBarGroupControlContainer13.ResumeLayout(false);
             this.panel_NaviAndNr.ResumeLayout(false);
-            this.panelPlayer.ResumeLayout(false);
             this.FL_NR_HEADER.ResumeLayout(false);
             this.flowLayoutPaneldaohang.ResumeLayout(false);
             this.panelgsdaohang.ResumeLayout(false);
@@ -2200,7 +2192,6 @@
         private DevExpress.XtraEditors.LabelControl Header2;
         private DevExpress.XtraNavBar.NavBarItem navBarItem21;
         private DevExpress.XtraEditors.LabelControl Label_dzjc;
-        private ExtWebBrowser extWebBrowser1;
         private DevExpress.XtraEditors.LabelControl Header3;
         private DevExpress.XtraEditors.LabelControl Header4;
         private DevExpress.XtraEditors.LabelControl Header5;

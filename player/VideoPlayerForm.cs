@@ -24,6 +24,14 @@ namespace vlc.net
         public string videoName = string.Empty; //视频名称
         private int Volume = 0; //当前声音大小
         private int ExtendWidth = 0; //多余出来的宽度,用于确定视频点在滑块的位置
+        private Timer doubleClickTimer = new Timer(); //计时器，用来判断是双击还是单击事件
+        private bool isFirstClick = true;
+        private bool isDoubleClick = false;
+        private int milliseconds = 0;
+        private Rectangle doubleClickRectangle = new Rectangle();
+        private Control OldCon = null; //存储视频窗口的父级，全屏时使用
+        private bool IfFullScreen = false;// 是否全屏
+        Form TerForm = null; //全屏时的临时窗口
 
         public VideoPlayerForm()
         {
@@ -32,11 +40,13 @@ namespace vlc.net
             vlc_player_ = new VlcPlayer(pluginPath);
             IntPtr render_wnd = this.panel1.Handle;
             vlc_player_.SetRenderWindow((int)render_wnd);
-
+            
             tbVideoTime.Text = "00:00:00/00:00:00";
 
             is_playinig_ = false;
 
+            doubleClickTimer.Interval = 100;
+            doubleClickTimer.Tick +=new EventHandler(doubleClickTimer_Tick);
             //videoName = "S01E02.mp4";
 
         }
@@ -45,11 +55,12 @@ namespace vlc.net
             //设置图片透明
             SetPictureBoxTransparent(pictureBox1, Resource1.大暂停);
             pictureBox1.Visible = false;
-
+            //SetPictureBoxTransparent(panel2, Resource1.空白);
             //播放视频
             videoPath = "video\\" + videoName;
             Play(videoPath);
         }
+        
         /// <summary>
         /// 外部播放视频的方法
         /// </summary>
@@ -96,47 +107,47 @@ namespace vlc.net
             ExtendWidth = 0; //由于不能解决白点所在容器和滚动条之间长度的换算，此处位置不要计算，先设为0了。
 
             #region 根据配置文件 加载视频点
-            string xmlPath = "config\\videoPoint.xml";
-            if (File.Exists(xmlPath))
-            {
-                XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load(xmlPath);
-                XmlNode xn = xmlDoc.SelectSingleNode("configuration/video[@name='" + videoName + "']");
-                if (xn != null)
-                {
-                    XmlNodeList dwkmList = xn.ChildNodes;
-                    foreach (XmlElement dwkm in dwkmList)
-                    {
-                        string time = dwkm.Attributes["time"].Value;
-                        string tip = dwkm.Attributes["tip"].Value;
-                        if (time.Split(':').Length == 3) //只有包含三个:的才符合规则
-                        {
-                            //根据trackBar1的位置，确定Label的位置
-                            int labelVal = GetIntByTime(time);
-                            if (labelVal <= ThisAll)
-                            {
-                                //为了让滑块显示在点的中央，此处加3处理
-                                int X = (int)((float)(labelVal + ExtendWidth) / (float)ThisAll * trackBar1.Right);
-                                if (X >= trackBar1.Right) //如果超宽度了，则取最后的值
-                                {
-                                    X = trackBar1.Right;
-                                }
-                                //动态增加Label
-                                LabelControl label1 = new LabelControl();
-                                label1.Appearance.Image = Resource1.white;
-                                label1.Size = new System.Drawing.Size(10, 5);
-                                label1.Text = " ";
-                                label1.ToolTip = tip;
-                                label1.Click += new System.EventHandler(this.labelControl2_Click);
-                                label1.MouseMove += new MouseEventHandler(lblTip_MouseMove);
-                                label1.Location = new System.Drawing.Point(X, 0);
-                                this.pointPanel.Controls.Add(label1);
+            //string xmlPath = "config\\videoPoint.xml";
+            //if (File.Exists(xmlPath))
+            //{
+            //    XmlDocument xmlDoc = new XmlDocument();
+            //    xmlDoc.Load(xmlPath);
+            //    XmlNode xn = xmlDoc.SelectSingleNode("configuration/video[@name='" + videoName + "']");
+            //    if (xn != null)
+            //    {
+            //        XmlNodeList dwkmList = xn.ChildNodes;
+            //        foreach (XmlElement dwkm in dwkmList)
+            //        {
+            //            string time = dwkm.Attributes["time"].Value;
+            //            string tip = dwkm.Attributes["tip"].Value;
+            //            if (time.Split(':').Length == 3) //只有包含三个:的才符合规则
+            //            {
+            //                //根据trackBar1的位置，确定Label的位置
+            //                int labelVal = GetIntByTime(time);
+            //                if (labelVal <= ThisAll)
+            //                {
+            //                    //为了让滑块显示在点的中央，此处加3处理
+            //                    int X = (int)((float)(labelVal + ExtendWidth) / (float)ThisAll * trackBar1.Right);
+            //                    if (X >= trackBar1.Right) //如果超宽度了，则取最后的值
+            //                    {
+            //                        X = trackBar1.Right;
+            //                    }
+            //                    //动态增加Label
+            //                    LabelControl label1 = new LabelControl();
+            //                    label1.Appearance.Image = Resource1.white;
+            //                    label1.Size = new System.Drawing.Size(10, 5);
+            //                    label1.Text = " ";
+            //                    label1.ToolTip = tip;
+            //                    label1.Click += new System.EventHandler(this.labelControl2_Click);
+            //                    label1.MouseMove += new MouseEventHandler(lblTip_MouseMove);
+            //                    label1.Location = new System.Drawing.Point(X, 0);
+            //                    this.pointPanel.Controls.Add(label1);
 
-                            }
-                        }
-                    }
-                }
-            }
+            //                }
+            //            }
+            //        }
+            //    }
+            //}
             #endregion
 
             //播放
@@ -279,6 +290,14 @@ namespace vlc.net
         /// <param name="e"></param>
         private void lblPause_Click(object sender, EventArgs e)
         {
+            PauseOrPlay();
+        }
+
+        /// <summary>
+        ///  播放暂停
+        /// </summary>
+        private void PauseOrPlay()
+        {
             if (is_playinig_)
             {
                 if (lblPause.Tag.ToString() == "暂停")
@@ -325,7 +344,7 @@ namespace vlc.net
                     }
                     else
                     {
-                        MessageBox.Show("没有上一个视频啦！");
+                        MessageBox.Show("当前是第一个视频！");
                         break;
                     }
                 }
@@ -353,7 +372,7 @@ namespace vlc.net
                     }
                     else
                     {
-                        MessageBox.Show("没有下一个视频啦！");
+                        MessageBox.Show("当前是最后一个视频！");
                         break;
                     }
                 }
@@ -522,8 +541,137 @@ namespace vlc.net
             trackBar.Cursor = Cursors.Hand;
         }
 
+        /// <summary>
+        /// 全屏
+        /// </summary>
+        private void FullScreen()
+        {
+            if (!IfFullScreen)
+            {
+                if (is_playinig_) //通过打开新窗口的方式实现全屏。
+                {
+                    OldCon = this.Parent; //记录父级
+                    TerForm = new Form();
+                    TerForm.Controls.Add(this);
+                    this.Location = new Point(0, 0);
+                    TerForm.WindowState = FormWindowState.Maximized;
+                    TerForm.TopMost = true;
+                    TerForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                    TerForm.Show();
+                    //设置ESC退出
+                    TerForm.KeyPreview = true;
+                    TerForm.KeyPress += new KeyPressEventHandler(TerForm_KeyPress);
+                    this.Size = TerForm.Size;
+                    //根据当前播放窗口的大小，重新设置暂停按钮的位置
+                    pictureBox1.Location = new Point(panel1.Width / 2 - 100, panel1.Height / 2 - 80);
+                    IfFullScreen = true;
+                }
+            }
+            else  //取消全屏
+            {
+                CancelFullScreen(TerForm);
+            }
+        }
+        //ESC退出
+        private void TerForm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Form form = (Form)sender;
+            if (e.KeyChar == (char)Keys.Escape)
+            {
+                CancelFullScreen(form);
+            }
+        }
+        /// <summary>
+        /// 取消全屏
+        /// </summary>
+        /// <param name="form"></param>
+        private void CancelFullScreen(Form form)
+        {
+            OldCon.Controls.Add(this); //窗口缩回去
+            this.Parent = OldCon;
+            form.Dispose();
+            form.Close();
+            IfFullScreen = false;
+            //根据当前播放窗口的大小，重新设置暂停按钮的位置
+            pictureBox1.Location = new Point(panel1.Width / 2 - 100, panel1.Height / 2 - 80);
+        }
 
+        private void TransVideoPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            // Verify that the mouse click is in the main hitTest rectangle.
+            //if (!hitTestRectangle.Contains(e.Location))
+            //{
+            //    return;
+            //}
 
+            // This is the first mouse click.
+            if (isFirstClick)
+            {
+                isFirstClick = false;
+
+                // Determine the location and size of the double click 
+                // rectangle area to draw around the cursor point.
+                doubleClickRectangle = new Rectangle(
+                    e.X - (SystemInformation.DoubleClickSize.Width / 2),
+                    e.Y - (SystemInformation.DoubleClickSize.Height / 2),
+                    SystemInformation.DoubleClickSize.Width,
+                    SystemInformation.DoubleClickSize.Height);
+                //Invalidate();
+
+                // Start the double click timer.
+                doubleClickTimer.Start();
+            }
+
+            // This is the second mouse click.
+            else
+            {
+                // Verify that the mouse click is within the double click
+                // rectangle and is within the system-defined double 
+                // click period.
+                if (doubleClickRectangle.Contains(e.Location) &&
+                    milliseconds < SystemInformation.DoubleClickTime)
+                {
+                    isDoubleClick = true;
+                }
+            }
+        }
+
+        private void doubleClickTimer_Tick(object sender, EventArgs e)
+        {
+            milliseconds += 200;
+
+            // The timer has reached the double click time limit.
+            if (milliseconds >= SystemInformation.DoubleClickTime)
+            {
+                doubleClickTimer.Stop();
+
+                if (isDoubleClick)  //双击
+                {
+                    FullScreen();//全屏
+                }
+                else   //单击
+                {
+                    PauseOrPlay(); //暂停
+                }
+
+                // Allow the MouseDown event handler to process clicks again.
+                isFirstClick = true;
+                isDoubleClick = false;
+                milliseconds = 0;
+            }
+        }
+
+        private void TransVideoPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Y >= TransVideoPanel.Size.Height * 0.7 && e.Y <= TransVideoPanel.Size.Height)
+            {
+                panel2.Visible = true;
+            }
+            else 
+            {
+                panel2.Visible = false;
+            }
+        }
 
 
     }

@@ -61,6 +61,9 @@
     <Compile Include="FirstForm.Designer.cs">
       <DependentUpon>FirstForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PanelEX.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="VideoPlayerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\播放.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\空白.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
